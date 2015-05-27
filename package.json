@@ -1,7 +1,7 @@
 {
     "description": "JSON model for BioJs Git releases",
     "latestReleaseVersion": "1.2",
-    "realseases": [
+    "releases": [
         {
             "url": "https://raw.githubusercontent.com/tcofoegbu/bjs-template/master/1.0/BioJsMSA_1.0.txt",
             "version": "1.0",

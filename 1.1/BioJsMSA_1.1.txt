@@ -9009,7 +9009,7 @@ opts.zoomer = {alignmentHeight: 225, labelWidth: 130,labelFontsize: "13px",label
 // init msa
 var m = new msa.msa(opts);
 
-m.g.colorscheme.set("scheme", jalviewData['jalviewSettings'].globalColorScheme);
+m.g.colorscheme.set("scheme", jalviewData['appSettings'].globalColorScheme);
 
 var x = 0;
 //jalviewData.seqs.forEach( function (seq)

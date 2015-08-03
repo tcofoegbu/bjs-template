@@ -32,31 +32,35 @@ BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object N
 </p>
 <h3>Advantages of JSON/BioJSON</h3>
 <ul>
-   <li>JSON is very popular and can be parsed in almost all programming languages</li>
+   <li>BioJSON can store very sophisticated sequence alignments along with their linked-data more than any other Bioinformatics data format</li>
+   <li>BioJSON can be easily embedded in HTML pages and some image formats</li>
+   <li>BioJSON is based on JSON which is very popular and can be parsed in almost all programming languages</li>
    <li>Integrates seamlessly with the HTTP rest architecture</li>
    <li>Very light weight, self describing and easy to understand</li>
    <li>JSON format is text only and uses JavaScript syntax</li>
    <li>JSON is hierarchical (i.e. it can contain values within values)</li>
    <li>Linked data can be efficiently represented</li>
 </ul>
-<p align="justify"> More information about JSON can be found at <a href="http://json.org/">http://json.org/</a>. BioJSON currently has the ability to represent any Sequence Alignment data in Jalview along with thier Annotations, Features, Groups, Hidden Sequences, Hidden columns, and custom application settings in a structured manner. </p>
+<p align="justify"> More information about JSON can be found at <a href="http://json.org/">http://json.org/</a>. BioJSON currently has the ability to represent any Sequence Alignment data in Jalview along with their Annotations, Features, Groups, Hidden Sequences, Hidden columns, and custom application settings in a structured manner. </p>
 
-<h3>Main Content Navigation Tips</h3>
+
+
+
+<h3>
+<a id="support-or-contact" class="anchor" href="http://tcofoegbu.github.io/bjs-template/#main-content" aria-hidden="true"><span class="octicon octicon-link"></span></a>The BioJSON Schema</h3>
 <ul align="justify">
-   <li>When the mouse is hovered over the elements in the main content section, traversable elements become highlighted and clickable. </li>
+   <li>When the mouse is hovered over the elements in the BioJSON schema section, traversable elements become highlighted and clickable. </li>
    <li>Click the “object” button or the plus “+” link to expand an object</li>
    <li>Click the minus “-” to collapse an object </li>
    <li>Click the parenthesis “{}” link to view the JSON schema which provides a more technical description of the data</li>
    <li>When you expand an object the following information becomes visible: The variables in the object, their data types and the description of each variable. This exactly corresponds to how it appears in BioJSON</li>
 </ul>
 
-
-<h3>
-<a id="support-or-contact" class="anchor" href="http://tcofoegbu.github.io/bjs-template/#main-content" aria-hidden="true"><span class="octicon octicon-link"></span></a>Main Content</h3>
-
 <p>
 <div id="doc"></div>  
 </p> 
+
+<p>Downloads: <a href="biojsonschema.json" target="_blank" download>BioJSON schema</a> | <a href="example_biojsons.json" target="_blank" download>Sample BioJSON</a></p>
 
 
 
@@ -66,7 +70,8 @@ BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object N
 <h3>
 <a id="sample-biojson" class="anchor" href="http://tcofoegbu.github.io/bjs-template/#sample-biojson" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sample BioJSON data</h3>
 
-<pre><code>{
+<pre><code>
+{
     "seqs": [
         {
             "name": "FER_CAPAN/125-135",
@@ -275,7 +280,7 @@ BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object N
             var schema =
             {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "BioJSON",
+    "id": "BioJSON Schema",
     "type": "object",
     "properties": {
         "seqs": {

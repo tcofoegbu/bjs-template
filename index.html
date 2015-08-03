@@ -67,7 +67,6 @@ BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object N
 <a id="sample-biojson" class="anchor" href="http://tcofoegbu.github.io/bjs-template/#sample-biojson" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sample BioJSON data</h3>
 
 <pre><code>{
-"seqs": [
     "seqs": [
         {
             "name": "FER_CAPAN/125-135",
@@ -115,15 +114,6 @@ BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object N
             "order": 5
         }
     ],
-    "appSettings": {
-        "globalColorScheme": "foo",
-        "webStartUrl": "www.jalview.org/services/launchApp",
-        "application": "Jalview",
-        "hiddenSeqs": "1827803677",
-        "showSeqFeatures": "true",
-        "version": "2.9",
-        "hiddenCols": "0-0;10-10"
-    },
     "seqGroups": [
         {
             "displayText": true,
@@ -209,7 +199,6 @@ BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object N
             "label": "Secondary Structure"
         }
     ],
-    "svid": "1.0",
     "seqFeatures": [
         {
             "fillColor": "#c13516",
@@ -244,7 +233,17 @@ BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object N
             "xEnd": 9,
             "type": "feature"
         }
-    ]
+    ],
+    "appSettings": {
+        "globalColorScheme": "foo",
+        "webStartUrl": "www.jalview.org/services/launchApp",
+        "application": "Jalview",
+        "hiddenSeqs": "1827803677",
+        "showSeqFeatures": "true",
+        "version": "2.9",
+        "hiddenCols": "0-0;10-10"
+    },
+    "svid": "1.0"
 }
 </code></pre>
 

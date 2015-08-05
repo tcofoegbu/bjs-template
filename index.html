@@ -28,8 +28,13 @@
       <h3>
 <a id="welcome-to-biojson-community-site" class="anchor" href="http://tcofoegbu.github.io/bjs-template/#welcome-to-biojson-community-site" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to BioJSON community site.</h3>
 <p align="justify">
-BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object Notation (JSON) model for representing/ exchanging Bioinformatics Alignment data. This is the first version of the specification and we welcome all feedbacks to make BioJSON more standardised, sustainable and widely adopted worldwide. The main content section was created with Docson - a  resource which uses a JSON schema to generate a beautified and interactive documentation.
+BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object Notation (JSON) model for representing/ exchanging Bioinformatics alignment data. This is the first version of the specification and we welcome all feedbacks to make BioJSON more standardised, sustainable and widely adopted worldwide. The main content section was created with Docson - a  resource which uses a JSON schema to generate a beautified and interactive documentation.
 </p>
+<h3>
+
+<a id="feature-plans" class="anchor" href="http://tcofoegbu.github.io/bjs-template/#feature-plans" aria-hidden="true"><span class="octicon octicon-link"></span></a>BioJSON Vision</h3>
+<p align="justify">Our vision is to arrive at a point where any alignment data represented in JSON conforms to the BioJSON specification.</p>
+
 <h3>Advantages of JSON/BioJSON</h3>
 <ul>
    <li>BioJSON can represent very sophisticated sequence alignments along with their linked-data bether than any other Bioinformatics data format</li>
@@ -40,9 +45,13 @@ BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object N
    <li>JSON format is text only and uses JavaScript syntax</li>
    <li>JSON is hierarchical (i.e. it can contain values within values)</li>
 </ul>
-<p align="justify"> More information about JSON can be found at <a href="http://json.org/">http://json.org/</a>. BioJSON currently has the ability to represent any Sequence Alignment data in Jalview along with their Annotations, Features, Groups, Hidden Sequences, Hidden columns, and custom application settings in a structured manner. </p>
+<p align="justify">More information about JSON can be found at <a href="http://json.org/">http://json.org/</a>.</p>
+
+<p align="justify">BioJSON currently has the ability to represent any sequence alignment data along with their annotations, features, groups, hidden sequences, hidden columns, and custom application settings. However, phylogenetic trees, structures and more sophisticated annotations are not yet supported but will gradually be introduced in future versions of BioJSON.</p>
 
 
+<h3> BioJSON UML Diagram</h3>
+<img src="biojson_uml_big.png" alt="BioJSON UML" width="100%" height="100%">
 
 
 <h3>
@@ -63,8 +72,6 @@ BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object N
 
 
 
-<h3> BioJSON UML Diagram</h3>
-<img src="biojson_uml_big.png" alt="BioJSON UML" width="100%" height="100%">
 
 <h3>
 <a id="sample-biojson" class="anchor" href="http://tcofoegbu.github.io/bjs-template/#sample-biojson" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sample BioJSON data</h3>
@@ -252,10 +259,22 @@ BioJSON was introduced in Jalview 2.9 to serve as a standard JavaScript Object N
 </code></pre>
 
 
+<h3>See BioJSON in Action!</h3>
+The current application of BioJSON in Jalview 2.9 includes:
+<ul>
+   <li>Export/import of alignment to/from a JSON flat file</li>
+   <li>Embedding alignment in HTML (File->Export Image -> HTML)</li>
+   <li>Embedding alignment in BioJS MSA viewer (File->Export Image -> BioJS)</li>
+   <li>Retrieval of embedded alignment data from HTML/BioJS files (Drag and drop file in Jalview)</li>
+</ul>
 
-<h3>
-<a id="feature-plans" class="anchor" href="http://tcofoegbu.github.io/bjs-template/#feature-plans" aria-hidden="true"><span class="octicon octicon-link"></span></a>BioJSON Vision</h3>
-<p align="justify">Our vision is to arrive at a point where any Alignment data represented in JSON conforms to the BioJSON specification.</p>
+Future applications of BioJSON in Jalview:
+<ul>
+   <li>Primary data protocol for Jalview web services (JalviewWS)</li>
+   <li>Primary data protocol for the Javascript version of Jalview (JalviewJS)</li>
+   <li>Storage of multiple alignments mapped to each other (i.e. CDNA/Protein alignments)</li>
+</ul>
+
 
 
 <h3>
